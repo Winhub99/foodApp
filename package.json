@@ -1,0 +1,18 @@
+{
+  "name": "foodapp",
+  "version": "1.0.0",
+  "description": "creating a food clone of swiggy for learing react fundamentals",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Vinod Singh Mehta",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.10.2",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
