@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "creating a food clone of swiggy for learing react fundamentals",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx parcel index.html"
   },
   "author": "Vinod Singh Mehta",
   "license": "ISC",
@@ -13,6 +14,7 @@
   },
   "dependencies": {
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.19.0"
   }
 }

@@ -1,1 +1,58 @@
-body{background-color: antiquewhite;}
+body{background-color: antiquewhite;
+margin: 0;
+padding: 0;}
+
+.header-content{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid red;
+}
+.header-list > ul{
+    list-style-type: none;
+    display: flex;
+
+}
+.header-list > ul > li{
+    margin-right: 10px;
+}
+.logo{
+    height: 100px;
+}
+
+.restaurant-card{
+    border: 1px solid black;
+    width: 250px;
+    margin: 10px;
+    padding: 10px;
+    overflow-wrap: break-word;
+}
+
+.restaurant-card > img{
+    width: 100%;
+    object-fit: cover;
+    height: 170px;
+}
+
+.restaurant-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.shimmer-card{   
+    border: 1px solid black;
+    width: 250px;
+    height:450px;
+    background-color: grey;
+    margin: 10px;
+    padding: 10px; 
+}
+
+.menu{
+    display: flex;
+}
+
+.menu img{
+    width: 250px;
+    aspect-ratio: 4/3;
+}
