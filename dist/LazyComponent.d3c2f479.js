@@ -605,40 +605,124 @@ try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _s = $RefreshSig$();
+const Section = ({ title, description, showMore, setShowMore, name })=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "border border-black m-2 p-2",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                className: "font-semibold text-2xl",
+                children: title
+            }, void 0, false, {
+                fileName: "src/components/LazyComponent.js",
+                lineNumber: 7,
+                columnNumber: 13
+            }, undefined),
+            showMore ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                onClick: ()=>setShowMore(""),
+                children: "Less"
+            }, void 0, false, {
+                fileName: "src/components/LazyComponent.js",
+                lineNumber: 10,
+                columnNumber: 23
+            }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                onClick: ()=>setShowMore(name),
+                children: "More"
+            }, void 0, false, {
+                fileName: "src/components/LazyComponent.js",
+                lineNumber: 10,
+                columnNumber: 75
+            }, undefined),
+            showMore && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h6", {
+                className: "italic",
+                children: description
+            }, void 0, false, {
+                fileName: "src/components/LazyComponent.js",
+                lineNumber: 11,
+                columnNumber: 26
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/components/LazyComponent.js",
+        lineNumber: 6,
+        columnNumber: 9
+    }, undefined);
+};
+_c = Section;
 const LazyComponent = ()=>{
+    _s();
+    const [showMore, setShowMore] = (0, _react.useState)("about");
+    let name;
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                className: "text-3xl font-bold m-2 p-2 ",
+                children: "INSTRAMART"
+            }, void 0, false, {
+                fileName: "src/components/LazyComponent.js",
+                lineNumber: 21,
+                columnNumber: 14
+            }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
                 children: "Lazy Loaded This component"
             }, void 0, false, {
                 fileName: "src/components/LazyComponent.js",
-                lineNumber: 5,
+                lineNumber: 22,
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
                 children: "Assume this is a very heavy component with. A 100 of components"
             }, void 0, false, {
                 fileName: "src/components/LazyComponent.js",
-                lineNumber: 6,
+                lineNumber: 23,
                 columnNumber: 13
-            }, undefined)
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Section, {
+                        showMore: showMore === "about",
+                        setShowMore: setShowMore,
+                        name: "about",
+                        title: "About us",
+                        description: "quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
+                    }, void 0, false, {
+                        fileName: "src/components/LazyComponent.js",
+                        lineNumber: 25,
+                        columnNumber: 17
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Section, {
+                        showMore: showMore === "product",
+                        setShowMore: setShowMore,
+                        name: "product",
+                        title: "Product",
+                        description: "quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
+                    }, void 0, false, {
+                        fileName: "src/components/LazyComponent.js",
+                        lineNumber: 26,
+                        columnNumber: 17
+                    }, undefined)
+                ]
+            }, void 0, true)
         ]
     }, void 0, true, {
         fileName: "src/components/LazyComponent.js",
-        lineNumber: 4,
+        lineNumber: 21,
         columnNumber: 9
     }, undefined);
 };
-_c = LazyComponent;
+_s(LazyComponent, "tIa4j0e2EFg0BGEzzuIp/uqSsOY=");
+_c1 = LazyComponent;
 exports.default = LazyComponent;
-var _c;
-$RefreshReg$(_c, "LazyComponent");
+var _c, _c1;
+$RefreshReg$(_c, "Section");
+$RefreshReg$(_c1, "LazyComponent");
 
   $parcel$ReactRefreshHelpers$63b0.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["90kf5","1xC6H"], null, "parcelRequire70d3")
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["90kf5","1xC6H"], null, "parcelRequire70d3")
 
 //# sourceMappingURL=LazyComponent.d3c2f479.js.map

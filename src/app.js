@@ -1,4 +1,4 @@
-import React, {Suspense, lazy} from 'react'
+import React, {Suspense, lazy, useState} from 'react'
 import  ReactDOM  from 'react-dom/client'
 import HeaderComponent from './components/Header'
 import BodyComponent from './components/Body'
@@ -9,16 +9,22 @@ import Error from './components/Error'
 import Contact from './components/Contact'
 import RestaurantDetails from './components/RestaurantDetails'
 import Profile from './components/Profile'
+import UserContext from './utils/UserContext'
 // import LazyComponent from './components/LazyComponent'
 
 const LazyComponent = lazy(()=>{return import("./components/LazyComponent")})
 const AppLayout =()=>{
+    const [user,setUser] = useState({
+        name:"Vinny",
+        email:"Vin@hub.com"
+    })
+
     return(
-        <>
+        <UserContext.Provider value={{user:user,setUser:setUser,}}>
             <HeaderComponent/>
             <Outlet/>
             <FooterComponent/>
-        </>
+        </UserContext.Provider>
     )
 }
 
