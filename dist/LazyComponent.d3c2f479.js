@@ -723,6 +723,6 @@ $RefreshReg$(_c1, "LazyComponent");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["90kf5","1xC6H"], null, "parcelRequire70d3")
+},{"react/jsx-dev-runtime":"iTorj","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react":"21dqq"}]},["90kf5","1xC6H"], null, "parcelRequire70d3")
 
 //# sourceMappingURL=LazyComponent.d3c2f479.js.map
